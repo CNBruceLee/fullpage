@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1,maximum-scale=1"/>
+    <title>最简单的实例</title>
+    <link rel="stylesheet" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css"/>
+    <style>
+        body {
+            color: #FFFFFF;
+        }
+        .section:nth-child(1) {
+            background: lightcoral;
+        }
+        .section:nth-child(2) {
+            background: lightblue;
+        }
+        .section:nth-child(3) {
+            background: lightgreen;
+        }
+        .section:nth-child(4) {
+            background: lightgoldenrodyellow;
+        }
+        .slide,
+        .section {
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="fullpage">
+    <div class="section">
+        <h1>这是第一屏</h1>
+    </div>
+    <!-- 添加幻灯片 -->
+    <div class="section">
+        <div class="slide">slide1</div>
+        <div class="slide">slide2</div>
+        <div class="slide">slide3</div>
+        <div class="slide">slide4</div>
+    </div>
+    <div class="section">
+        <h1>这是第三屏</h1>
+    </div>
+    <div class="section">
+        <h1>这是第四屏</h1>
+    </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-easing/jquery.easing.min.js"></script>
+<script src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
+
+<script>
+    $(function () {
+        $('#fullpage').fullpage();
+    });
+</script>
+
+</body>
+</html>

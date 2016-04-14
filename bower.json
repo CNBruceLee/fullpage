@@ -1,0 +1,24 @@
+{
+  "name": "fullpage",
+  "authors": [
+    "liuqiuchen <2016968116@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^2.2.3",
+    "fullpage.js": "fullpage#^2.7.9",
+    "jquery-easing": "*"
+  }
+}
