@@ -55,9 +55,70 @@
 
 <script>
     $(function () {
-        $('#fullpage').fullpage();
+        $('#fullpage').fullpage({
+            anchors: ['page1', 'page2', 'page3', 'page4'],
+            afterLoad: function (anchorLink, index) {
+                console.log('anchorLink=' + anchorLink + ', index=' + index);
+            }
+        });
     });
 </script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

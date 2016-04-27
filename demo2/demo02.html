@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1,maximum-scale=1"/>
+    <title>fullpage配置项</title>
+    <link rel="stylesheet" href="../bower_components/fullpage.js/dist/jquery.fullpage.min.css"/>
+    <style>
+        body {
+            color: #FFFFFF;
+        }
+        .slide,
+        .section {
+            text-align: center;
+        }
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div id="header"><button>button</button></div>
+
+<div id="fullpage">
+    <div class="section">
+        <h1>这是第一屏</h1>
+    </div>
+    <!-- 添加幻灯片 -->
+    <div class="section">
+        <div class="slide">slide1</div>
+        <div class="slide">slide2</div>
+        <div class="slide">slide3</div>
+        <div class="slide">slide4</div>
+    </div>
+    <div class="section">
+        <h1>这是第三屏</h1>
+    </div>
+    <div class="section">
+        <h1>这是第四屏</h1>
+    </div>
+</div>
+
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery-easing/jquery.easing.min.js"></script>
+<script src="../bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
+
+<script>
+    $(function () {
+        $('#fullpage').fullpage({
+            //设置每一屏的背景色
+            sectionsColor: ['green', 'orange', 'gray', 'red'],
+            //去除幻灯片两侧的按钮，移动设备可以滑动查看内容
+            //controlArrows: false
+
+            //定义锚链接
+            anchors: ['page1', 'page2', 'page3', 'page4'],
+
+            //锁定锚链接
+            //lockAnchors: false,
+
+            //滚动到顶部后，是否连续滚动到底部
+            //loopTop: false,
+
+            //loopBottom: false,
+
+            //横向幻灯片是否循环滚动
+            //loopHorizontal: false,
+
+            //设置为false会出现浏览器默认滚动条，并且滚动生硬
+            //autoScrolling: true,
+
+            //是否包含滚动条
+            //scrollBar: true,
+
+            //paddingTop: '200px',
+            //paddingBottom: '200px'
+
+            //需要被固定的元素
+            //fixedElements: '#header',
+
+            //键盘方向键可以进行导航
+            //keyboardScrolling: false,
+
+            //页面顺滑地循环滚动，设置此项的时候不要设置loopTop/Bottom否则不兼容
+            //continuousVertical: true
+
+            //通过锚链接定位不再有动画效果
+            //animateAnchor: false
+
+            //recordHistory: true
+
+//            navigation: true,
+//            navigationPosition: 'right',
+//            navigationTooltips: ['page1', 'page2', 'page3', 'page4'],
+//            showActiveTooltip: true,
+//            slidesNavigation: true,
+//            slidesNavPosition:'top'
+
+        });
+    });
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
